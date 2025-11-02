@@ -1,0 +1,33 @@
+In this chapter of the ML Zoomcamp by DataTalks.Club (led by Alexey Grigorev), we dived into Decision Trees and Ensemble Learning—two core components in supervised machine learning that offer high interpretability and flexibility. This chapter addresses decision trees, their structure, splitting methods, as well as ensemble techniques like bagging, boosting, and stacking to improve model performance. Notable briefings on the same are as follows:
+
+
+
+Decision Trees: Core Concepts and Learning
+
+In this section, the course covers decision trees as intuitive, rule-based algorithms that are effective yet prone to overfitting on complex datasets. Key topics include:
+
+Splitting Criteria: Decision trees divide data by optimizing splits to minimize classification error. Concepts like "impurity" are introduced, helping learners understand how criteria such as Gini impurity and entropy guide the algorithm in choosing splits that reduce classification mistakes. Overfitting risks are discussed, particularly with deep trees that may learn too much noise from training data. 
+Hyperparameters Tuning: Overfitting risks are addressed through hyperparameters like max_depth and min_samples_split, which limit the tree’s depth or require a minimum number of data points to create a split. This control helps maintain model generalizability.
+
+Random Forests: Reducing Variance with Bagging
+Reduce Variance: By training multiple trees on bootstrapped samples and averaging their predictions, Random Forests minimize the variance seen in individual decision trees. Each tree votes, and the most common prediction is taken as the final output.
+Feature Randomization: Not only are data samples randomized, but each split only considers a random subset of features, reducing correlation among trees and further lowering overfitting risks.
+Hyperparameters Tuning: Important parameters include n_estimators (number of trees) and max_features (maximum features per split). Tuning these parameters helps balance model performance and computational cost, which is demonstrated through hands-on coding examples in Python.
+
+Boosting: Correcting Weak Learners
+
+Boosting techniques improve model accuracy by correcting the errors of weak learners sequentially. The course explains how models like XGBoost and Gradient Boosting build upon previous models, focusing on examples misclassified in earlier rounds. Unlike bagging, where trees are trained independently, boosting allows each tree to learn from the errors of its predecessors, improving the model's precision.
+
+
+Practical Coding Exercises
+
+Learners get to work with Scikit-Learn and xgboost libraries for hands-on experience, building and tuning decision trees, Random Forests, and boosting models. Exercises guide students in implementing models, evaluating them with metrics like accuracy and ROC AUC, and interpreting tree structures for insights into the decision process
+
+
+Real-World Considerations
+
+The course emphasizes practical considerations for applying ensemble methods in production, such as monitoring overfitting in deep trees and choosing ensemble methods that balance accuracy with computational efficiency.
+
+
+By the end of the Chapter, learners gain practical knowledge to confidently implement decision trees, Random Forests, and boosting techniques, forming a solid foundation in ensemble learning.
+
